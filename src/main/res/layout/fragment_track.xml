@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_track"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@drawable/fintapbg"
+    tools:context=".Fragment.TrackFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fblogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EverGrow"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            />
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:id="@+id/trackloan_ll"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/trackloan_iv"
+        android:src="@drawable/trackloan_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/trackcardview"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/track_name_tv"
+                android:textSize="16sp"
+                android:text="Dear"
+                android:paddingStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="THANKS FOR APPLY"
+                android:paddingStart="0dp"
+                android:textColor="@color/colorViolate"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:padding="8dp"
+                android:text="Please Enter Your Application Number To Track your Loan Status"
+                android:paddingStart="0dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:background="@drawable/dotted_bg"
+                android:hint="Application Number"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:id="@+id/application_et"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_above="@+id/track_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/track_btn"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/butttonbg"
+                android:text="Track"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/notrackloan_ll"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/notrackloan_iv"
+                android:src="@drawable/nogetloan_icon"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginBottom="0dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/notrackcardview"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/notrack_name_tv"
+                        android:textSize="16sp"
+                        android:text="Dear"
+                        android:paddingStart="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:padding="16dp"
+
+android:text="You haven't applied for any loans can select any option which is suitable for you"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Button
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/loan_btn"
+                        android:background="@drawable/butttonbg"
+                        android:text="Loans"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

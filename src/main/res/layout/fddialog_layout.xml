@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/epbg"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:padding="8sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Successfully Submit Your Feedback Form Thank You"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>

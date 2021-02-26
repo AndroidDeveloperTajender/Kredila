@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.app.evergrow"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 4
+        versionName "1.0.3"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.2.2'
+    implementation 'com.google.firebase:firebase-analytics:18.0.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:19.2.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-firestore:21.7.1'
+    implementation 'com.firebaseui:firebase-ui-firestore:4.3.1'
+
+    implementation 'com.android.support:design:30.0.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.0'
+    implementation 'androidx.core:core:1.3.2'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    implementation 'com.github.GrenderG:Toasty:1.5.0'
+    implementation 'com.irozon.sneaker:sneaker:2.0.0'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.firebaseui:firebase-ui-storage:4.3.2'
+    // Also declare the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation 'com.android.billingclient:billing-ktx:3.0.1'
+    implementation 'com.shuhart.stepview:stepview:1.5.1'
+    implementation 'com.anton46:stepsview:0.0.2'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'com.anjlab.android.iab.v3:library:1.0.44'
+    implementation 'com.hbb20:ccp:2.4.0'
+    implementation 'com.agrawalsuneet.androidlibs:loaderspack:1.2.3'
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'cn.gavinliu:ShapedImageView:0.8.6'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.wednesday-solutions:CreditCardEditText:+@aar'
+    implementation 'com.example.creditcardlibrary:cardview:0.0.15'
+    implementation 'com.stripe:stripe-android:15.1.0'
+    //  implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.nex3z:notification-badge:1.0.4'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.braintreepayments:card-form:5.0.0'
+    implementation 'com.craftman.cardform:cardform:0.0.2'
+    implementation 'com.github.baoyachi:StepView:1.9'
+    implementation 'com.github.Temidtech:AndroidOtpCustomViewmaster:1.0'
+    implementation 'com.razorpay:checkout:1.5.16'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+}

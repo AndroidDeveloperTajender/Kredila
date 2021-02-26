@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/evergrow_bg"
+    tools:context=".TermandConditionActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/fblogo"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="EverGrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="About Us (EverGrow):-"
+            android:paddingStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow is a kind of services provider platform who is providing the online solution for financial Services. EverGrow is A Trade name and App Name. This platform generating leads from the market from different different type of loan application and providing the services to users by help of financial services provider of financial consultant or Bank, this platform generating leads and sale out in the market on cost per basis."
+            android:paddingStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text=" TERMS AND CONDITIONS"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text=" Dear Users"
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow is a financial services provider application platform and we have generated only leads on paid basis.Also we are not any bank and nbfc or any kind of Financial Institutions.We cannot provide the loan else we only generate the leads from our platform and we can refer to other banking sector who is interested for your services, we refer leads only to the banking sector financial consultant and financial services provider they can be reach at you and guide for better product servicing."
+            android:paddingStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Eligibility criteria:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="For any kind of loan application apply user should have very good CIBIL score and credit history in past,should be Indian residents, 21+ ages, and may should salaried or self-employed"
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Credit Score Policy:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow is not authorized to check your credit history so that please don't worry about that, but if we will transfer your lead to any financial sector service provider or Institutions or Financial Service consultant so that they can check your credit history for better servicing for your loan process application, in that case we are not responsible for any kind of credit history up and down and effect."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Emi Free:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Low Cibil Score:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Low CIBIL score is also a self-attraction line where we are using in our application platform for attracting to users for getting any loan application should be a good credit history and any applicant cannot claim for any type of our services if they will not getting satisfied."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Application Fee:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Application fees and any kind of other fees when is taken by our platform for application that it is clearly nonrefundable amount, if any applicant will not getting there refund back then we are not responsible for refund, our platform and company just a kind of application leads generator in the market we are not responsible for any kind of refunds and application. Also if any user will not get loan status for required loan and calls or replies from our platform or any other Financial Institutions from banks or any other financial service provider then we cannot also responsible."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="DATA POLICY:"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow will not sell any user database to any third party in the market your database hundred percent secured and safe with us that we can use your contact details and above details with loan providers companies like bank or financial sectors for providing better services to you."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Loan Process and Products:-"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow is a kind of online way for applies all listed loan products.FundBooking generate user database only and sell to those financial service providers who is interested for provide the services of loans, we are not any bank or financial sector and we will not provide any kind of loan to users in the market."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Payments: -"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow take some application charges from the user while the applied Loan products, amount charges will filtered genuinely of our users that you are a needy and genuine user and this application charges is not refundable from FundBooking Platform and company"
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="Refund Policy: -"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="EverGrow has not any refund policy of the application fees in any circumstances."
+            android:paddingStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text=" Mail us at: Support@EverGrow.com"
+            android:paddingStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_gravity="end"
+            android:background="@drawable/butttonbg"
+            android:id="@+id/agree_btn"
+            android:layout_margin="8sp"
+            android:textColor="@color/colorWhite"
+            android:text="Agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

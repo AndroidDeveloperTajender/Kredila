@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1062994812530",
+    "firebase_url": "https://evergrow-6d67b.firebaseio.com",
+    "project_id": "evergrow-6d67b",
+    "storage_bucket": "evergrow-6d67b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062994812530:android:2d43aab7d2c575e1876ceb",
+        "android_client_info": {
+          "package_name": "com.app.evergrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062994812530-3qb6cqmk4ibtervkqjuso35h1khu8msc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.evergrow",
+            "certificate_hash": "6cec8d3fb091511f5bdccd534f3bb9fe9e05bae2"
+          }
+        },
+        {
+          "client_id": "1062994812530-2emgcqde7vgms95sup6ndk4kjqvrlfiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJmG41HO1U-cx-kh3izn1aIRcJXp_K-nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062994812530-2emgcqde7vgms95sup6ndk4kjqvrlfiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

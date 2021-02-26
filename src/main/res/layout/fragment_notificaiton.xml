@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fintapbg"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.NotificaitonFragment">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fblogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EverGrow"
+        android:id="@+id/telepaytitle"
+        android:layout_below="@+id/logo"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorViolate"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/notrecord_tv"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:text="Ohh Dear, Your Notification Box is empty Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_gravity="center_vertical"
+        android:id="@+id/notificaitonloan_bg"
+        android:textColor="@color/colorWhite"
+        android:text="Apply Now"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/notrecord_tv"
+        android:background="@drawable/butttonbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/notification_rv"
+        android:layout_below="@+id/telepaytitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

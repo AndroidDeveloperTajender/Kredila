@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/dashboard_bg"
+    tools:context=".Fragment.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/homescreen_viewpager"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="200dp"/>
+
+        <ss.com.bannerslider.Slider
+            app:slider_interval="2000"
+            app:slider_animateIndicators="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:slider_loopSlides="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/banner_slider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner_slider">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/iploanll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:visibility="visible"
+                        android:layout_margin="10dp"
+
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:padding="6dp"
+                                android:src="@drawable/personalloan"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Lal Dora"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Property Laon"
+                                android:textColor="@color/colorPink"
+                                android:textSize="9sp" />
+                            <TextView
+                                android:visibility="gone"
+                                android:textSize="9sp"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/ibloanll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:visibility="visible"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:padding="6dp"
+                                android:src="@drawable/loan"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+
+                                android:text="Un-Authorize"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_marginTop="6dp"
+                                android:textStyle="bold"
+                                android:textSize="10sp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorPink"
+                                android:text="Property Laon"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="9sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:textSize="9sp"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/csloanll"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:padding="0dp"
+                            android:src="@drawable/capital"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="Regularized"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/colorPink"
+                            android:text="Property Laon"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="9sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:text="3 EMI Free Support"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:textSize="9sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/cdloanll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+
+                                android:padding="6dp"
+                                android:src="@drawable/android"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Without Map"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="6dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="9sp"
+                                android:textColor="@color/colorPink"
+                                android:text="Property Laon"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:textSize="9sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/isloanll"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:padding="0dp"
+                                android:src="@drawable/f"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Current/Saving"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="6dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorPink"
+                                android:text="Property Laon"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="9sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="9sp"
+                                android:visibility="gone"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+</LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/witrgstloanll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:padding="6dp"
+                                android:src="@drawable/scholarship"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Life Insurence"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="6dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorPink"
+                                android:text="Property Laon"
+                                android:layout_gravity="center"
+                                android:textSize="9sp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:visibility="gone"
+                                android:textSize="9sp"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+</LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:visibility="gone"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/applicationloan"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+
+                                android:padding="6dp"
+                                android:src="@drawable/recession"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Low Salary Loan"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="6dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="9sp"
+                                android:textColor="@color/colorPink"
+                                android:text="No Cibil Check"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:textSize="9sp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+</LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/dailyloan"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:padding="6dp"
+                                android:src="@drawable/inflation"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Low Income Loan"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBlack"
+                                android:layout_marginTop="6dp"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorPink"
+                                android:text="No Cibil Check"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="9sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="9sp"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:id="@+id/witrloan"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+
+                                android:padding="0dp"
+                                android:src="@drawable/itrdocument"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Without ITR Loan"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginTop="6dp"
+                                android:textColor="@color/colorBlack"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textColor="@color/colorPink"
+                                android:text="No Cibil Check"
+                                android:layout_gravity="center"
+                                android:textSize="9sp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textSize="9sp"
+                                android:textColor="@color/colorBlack"
+                                android:text="3 EMI Free Support"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/landkart_ll"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6dp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:padding="0dp"
+                            android:src="@drawable/hdb"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:padding="0dp"
+                            android:src="@drawable/logoab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="6dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:padding="0dp"
+                            android:src="@drawable/janabank"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:id="@+id/duc_ll"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        app:cardElevation="6dp"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:padding="0dp"
+                            android:src="@drawable/finway" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardElevation="6dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:padding="0dp"
+                            android:src="@drawable/lendingkart" />
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        app:cardElevation="6dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:src="@drawable/incred"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+                    <TextView
+                        android:text="COVID-19, Stay Home -Stay Safe :- "
+                        android:textColor="@color/colorRed"
+                        android:textStyle="bold"
+                        android:padding="6dp"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/marquee_tv"
+                        android:text="EARLYPAY working in 150+ Countries,  Support All Currencies, Trusted by Thousands Of Applicants World Wide,  Easy &amp; Safe Apply , All Type Of Profiles Can Apply Now, Lowest Interest Rates Applied "
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit ="marquee_forever"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

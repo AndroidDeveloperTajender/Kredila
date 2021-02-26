@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/evergrow_bg"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationForm.ApplicationForm1Activity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fblogo"
+        android:layout_width="70dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"/>
+    <TextView
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/stepone"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="6dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/fullname_et"
+                android:layout_margin="10dp"
+                android:hint="Full Name"
+                android:padding="10dp"
+
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/mobilenumber_et"
+                android:hint="Mobile Number"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:id="@+id/emailid_et"
+                android:hint="E-mail ID"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/city_actv"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="16dp"
+                        android:hint="Enter City"
+                        android:textAlignment="textStart"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:id="@+id/hometype_rg"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/rented_rb"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Rented"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <RadioButton
+                            android:id="@+id/owned_rb"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:checked="true"
+                            android:text="Owned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/monthrent_et"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/dotted_bg"
+                android:hint="Monthly Rent"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address_et"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:hint="Address"
+                android:maxLength="100"
+                android:layout_margin="10dp"
+                android:lines="3"
+                android:padding="10dp"
+                android:background="@drawable/dotted_bg"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/salary_bg"
+                    android:checked="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" Salaried Person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/business_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Businessman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/noworking_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Unemployed Person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/student_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Student Loan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/designation_et"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:hint="Designation"
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/cname_et"
+                android:hint="Company Name"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+
+                android:inputType="text"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/pincode_et"
+                android:hint="Pin Code"
+                android:padding="10dp"
+                android:inputType="number"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"/>
+
+
+
+            <Button
+                android:background="@drawable/butttonbg"
+                android:text="next"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/nextone_btn"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

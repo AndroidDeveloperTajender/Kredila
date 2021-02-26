@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/evergrow_bg"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logoph"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/fblogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EverGrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoph" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoph">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Full Name"
+                android:textColor="#43306D"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullnamereg_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Mobile Number"
+                android:textColor="#43306D"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginphonereg_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_margin="10dp"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Enter Mpin"
+                android:layout_marginTop="10dp"
+                android:textColor="#43306D"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+                    android:id="@+id/pinone_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:nextFocusForward="@+id/pintwom_et"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:layout_margin="6dp"
+                    android:nextFocusRight="@id/pintwom_et"
+                    android:ems="3"/>
+                <EditText
+
+                    android:id="@+id/pintwo_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:nextFocusForward="@+id/pinone_et"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:layout_margin="6dp"
+                    android:nextFocusLeft="@+id/pinthree_et"
+                    android:nextFocusRight="@id/pintwom_et"
+                    android:ems="3"/>
+                <EditText
+
+                    android:id="@+id/pinthree_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:nextFocusForward="@+id/pintwo_et"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:layout_margin="6dp"
+                    android:nextFocusLeft="@+id/pinthree_et"
+                    android:nextFocusRight="@id/pintwom_et"
+                    android:ems="3"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:nextFocusLeft="@+id/pinthree_et"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:nextFocusForward="@+id/pinthree_et"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:layout_margin="6dp"
+                    android:nextFocusRight="@id/pintwom_et"
+                    android:ems="3"
+                    android:id="@+id/pinfour_et" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Enter OTP"
+                android:layout_marginTop="10dp"
+                android:textColor="#43306D"
+                android:textSize="16sp" />
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/loginregotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:inputType="number"
+                android:layout_margin="8dp"
+                app:pinHeight="25dp"
+                app:pinLength="6"
+                app:pinWidth="25dp" />
+
+            <Button
+                android:id="@+id/sendotpreg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/gradient_button_bg"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Send Otp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/gradient_button_bg"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <TextView
+            android:id="@+id/loginlinks_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ?"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/loginlinks_tv"
+            android:text="Login"
+            android:textAlignment="center"
+            android:id="@+id/loginlink_tv"
+            android:textColor="@color/bt_black"
+            android:textSize="20sp"
+
+            />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

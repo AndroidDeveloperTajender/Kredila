@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/evergrow_bg"
+    tools:context=".MPINActivity">
+
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:src="@drawable/fblogo"
+        android:id="@+id/logoph"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EverGrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoph" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter Mpin"
+                android:textColor="#43306D"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pinonem_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:nextFocusForward="@+id/pintwom_et"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:layout_margin="6dp"
+                    android:nextFocusRight="@id/pintwom_et"
+                    android:ems="3" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:id="@+id/pintwom_et"
+                    android:layout_width="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:nextFocusLeft="@id/pinonem_et"
+                    android:nextFocusForward="@+id/pinthreem_et"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:nextFocusRight="@id/pinthreem_et"
+                    android:ems="3" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:maxLength="1"
+                    android:id="@+id/pinthreem_et"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/pintwom_et"
+                    android:nextFocusForward="@+id/pinfourm_et"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:nextFocusRight="@id/pinfourm_et"
+                    android:layout_margin="6dp"
+                    android:ems="3" />
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:maxLength="1"
+                    android:id="@+id/pinfourm_et"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:nextFocusLeft="@id/pinthreem_et"
+                    android:layout_gravity="center"
+                    android:imeOptions="actionDone"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:ems="3" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/loginmpin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/gradient_button_bg"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account ? Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="140dp"
+        android:textAlignment="center"
+        android:id="@+id/mpinloginlink_tv"
+        android:textSize="20sp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

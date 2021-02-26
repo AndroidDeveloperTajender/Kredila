@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fintapbg"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationForm.ApplicationForm4Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/fblogo"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"/>
+        <TextView
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/stepfour"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="6dp"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:id="@+id/usernames4_tv"
+                    android:textStyle="bold"
+                    android:paddingStart="20dp"
+                    android:text="User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:padding="8sp"
+                    android:text="Accept and Generate all loan agreements &amp; Stamp Papers "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:layout_margin="10dp"
+                    android:text="Sign Verification Agreements"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sva_chk"
+                    android:buttonTint="@color/colorViolate"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:buttonTint="@color/colorViolate"
+                    android:layout_margin="10dp"
+                    android:text="Loan Agreement For()"
+                    android:layout_width="match_parent"
+                    android:id="@+id/laf_chk"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+                    android:buttonTint="@color/colorViolate"
+                    android:layout_margin="10dp"
+                    android:text="399rs Stamp Papers"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sp_chk"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:padding="10dp"
+                    android:text="You Will receive 12 digits application no instally"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"
+                    android:text="After completing the process ,Complete your application process now for getting loan and dont't exit before generating your file number."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <Button
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="40dp"
+                    android:id="@+id/nextFour_btn"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@color/colorWhite"
+                    android:text="Next"
+                    android:background="@drawable/butttonbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

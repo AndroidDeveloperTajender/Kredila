@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="com_google_android_gms_fonts_certs" />
+
+    <string-array name="Languages">
+        <item>Rental</item>
+        <item>Kaccheki Income</item>
+        <item>Without ITR</item>
+        <item>Without GST</item>
+        <item>Without Form-16</item>
+        <item>Without Salary Slips</item>
+        <item>Without Current Account</item>
+        <item>All Type Accept</item>
+
+    </string-array>
+</resources>

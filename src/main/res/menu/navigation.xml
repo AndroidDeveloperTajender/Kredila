@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bnav_feedback"
+        android:icon="@drawable/feedbackicon"
+        android:title="FEEDBACK" />
+    <item
+        android:id="@+id/bnav_track"
+        android:icon="@drawable/tracklocationicon"
+        android:title="TRACK" />
+    <item
+        android:id="@+id/bnav_home"
+        android:icon="@drawable/housenavicon"
+        android:title="HOME" />
+    <item
+        android:id="@+id/bnav_support"
+        android:icon="@drawable/supportheadericon"
+        android:title="SUPPORT"
+        />
+    <item
+        android:id="@+id/bnav_account"
+        android:icon="@drawable/myaccount"
+        android:title="ACCOUNT" />
+
+</menu>
