@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/evergrow_bg"
     tools:context=".ApplicationForm.ApplicationForm3Activity">
 
 
@@ -23,19 +22,44 @@
             android:textSize="26sp"
             android:textColor="@color/colorBlack"
             android:textStyle="bold"
+            android:visibility="gone"
             android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <ImageView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/stepthree"
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
+        <RelativeLayout
+            android:background="@drawable/formcardbg"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <ImageView
 
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:layout_height="90dp"/>
+            <TextView
+                android:textColor="#111"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:text="Lead (Filter)"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="20dp"
             app:cardCornerRadius="6dp"
             android:layout_height="wrap_content">
 
@@ -45,140 +69,113 @@
                 android:layout_margin="20dp"
                 android:layout_height="wrap_content">
 
-                <TextView
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"
-                    android:padding="6dp"
-                    android:textSize="18sp"
-                    android:layout_marginTop="5dp"
-                    android:text="Market Value"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="0dp"
+                        android:padding="6dp"
+                        android:textSize="18sp"
+                        android:text="Choose Location"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/locationstate_sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="16dp"
+                        android:background="@drawable/spinner_bg"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_height="wrap_content">
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:orientation="horizontal"
-                       android:layout_height="wrap_content">
-
-                       <RadioButton
-                           android:id="@+id/mv_one"
-                           android:text="10l-20l"
-                           android:layout_margin="2dp"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"/>
-                       <RadioButton
-                           android:layout_margin="2dp"
-                           android:id="@+id/mv_two"
-                           android:text="20l-30l"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"/>
-                       <RadioButton
-                           android:layout_margin="2dp"
-                           android:id="@+id/mv_three"
-                           android:text="30l-40l"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"/>
-                       <RadioButton
-                           android:layout_margin="2dp"
-                           android:id="@+id/mv_four"
-                           android:text="40l-60l"
-                           android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"/>
-                   </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/mv_five"
-                            android:text="60l-80l"
-                            android:layout_margin="2dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:layout_margin="2dp"
-                            android:id="@+id/mv_six"
-                            android:text="80l-1cr"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:layout_margin="2dp"
-                            android:id="@+id/mv_seven"
-                            android:text="1cr-2cr"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:layout_margin="2dp"
-                            android:id="@+id/mv_earth"
-                            android:text="2cr-5cr"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="0dp"
+                        android:padding="6dp"
+                        android:textSize="18sp"
+                        android:text="Customer Proffesion"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/customerprofession_sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="16dp"
+                        android:background="@drawable/spinner_bg"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
+
                 <TextView
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
                     android:layout_marginTop="30dp"
                     android:textSize="18sp"
                     android:padding="6dp"
-                    android:text="Measorement"
+                    android:id="@+id/assetstitle_tv"
+                    android:text="Asset Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <SeekBar
+                    android:id="@+id/seekbar_assestdetail"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:progressTint="@android:color/holo_green_light"
+                    android:thumbTint="@color/colorPrimary"
+                    android:min="20"
+                    android:max="75"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:progress="5"
+                    android:tickMarkTint="@color/colorAccent"
+                    android:layout_marginEnd="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
-
-                <LinearLayout
+                <TextView
+                    android:textStyle="bold"
+                    android:padding="6dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18sp"
+                    android:id="@+id/leadselect_tv"
+                    android:text="Lead Select(How Much Need)"
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:id="@+id/measorment_one_"
-                            android:text="25Gaj-50Gaj"
-                            android:layout_margin="5dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:layout_margin="5dp"
-                            android:id="@+id/measorment_two"
-                            android:text="50Gaj-100Gaj"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-
-                        <RadioButton
-                            android:layout_margin="5dp"
-                            android:id="@+id/measorment_three"
-                            android:text="100Gaj-200Gaj"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:layout_margin="5dp"
-                            android:id="@+id/measorment_four"
-                            android:text="200Gaj + Any"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                </LinearLayout>
-
-
+                    android:layout_height="wrap_content"/>
+                <SeekBar
+                    android:id="@+id/seekbar_leadselect"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:progressTint="@android:color/holo_green_light"
+                    android:thumbTint="@color/colorPrimary"
+                    android:min="20"
+                    android:max="75"
+                    android:progress="5"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:tickMarkTint="@color/colorAccent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
                 <Button
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"

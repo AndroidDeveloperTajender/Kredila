@@ -65,12 +65,10 @@ class NotificaitonFragment : Fragment() {
                             context?.let { NotificationAdapter(it, listnotification) }
 
                         root.notification_rv.setHasFixedSize(true)
-
                         gm = GridLayoutManager(context, 1)
                         root.notification_rv!!.layoutManager=gm
                         root.notification_rv.adapter=adapters
                     }
-
                 }else {
                     Log.e("FRAGMENT", "No Data")
                 }

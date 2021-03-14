@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="com_google_android_gms_fonts_certs" />
+    <string-array name="state">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
 
+    </string-array>
+    <string-array name="profession">
+        <item>Indiviual</item>
+        <item>Self Employeed</item>
+        <item>Salaried</item>
+        <item>House Wife</item>
+        <item>Student</item>
+        <item>Other</item>
+    </string-array>
     <string-array name="Languages">
         <item>Rental</item>
         <item>Kaccheki Income</item>
@@ -11,6 +49,24 @@
         <item>Without Salary Slips</item>
         <item>Without Current Account</item>
         <item>All Type Accept</item>
+
+    </string-array>
+    <string-array name="Cibil">
+        <item>Select Cibil Status</item>
+        <item>500-600</item>
+        <item>600-700</item>
+        <item>700-800</item>
+        <item>800-900</item>
+        <item>900-1000</item>
+    </string-array>
+    <string-array name="Income">
+        <item>Select Income Type</item>
+        <item>UPTO 2L</item>
+        <item>UPTO 5L</item>
+        <item>UPTO 10L</item>
+        <item>UPTO 50L</item>
+        <item>UPTO 1Cr</item>
+        <item>UPTO 5Cr+</item>
 
     </string-array>
 </resources>

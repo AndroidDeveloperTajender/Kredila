@@ -32,7 +32,7 @@
                     android:layout_gravity="end"
                     android:layout_marginEnd="10dp"
                     android:id="@+id/support_header_iv"
-                    android:src="@drawable/supportheadericon"/>
+                    android:src="@drawable/supportheadertoolicon"/>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"

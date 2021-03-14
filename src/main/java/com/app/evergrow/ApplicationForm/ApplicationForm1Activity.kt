@@ -62,11 +62,7 @@ class ApplicationForm1Activity : AppCompatActivity() , DatePickerDialog.OnDateSe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_application_form1)
-
-
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-
-
        // getLastLocation()
         city_et=findViewById<AutoCompleteTextView>(R.id.city_actv)
         salarys_rb=findViewById(R.id.salary_bg)
@@ -83,10 +79,8 @@ class ApplicationForm1Activity : AppCompatActivity() , DatePickerDialog.OnDateSe
         //val languages = resources.getStringArray(R.array.COUNTRIES)
         val adapter= ArrayAdapter(this,
                 android.R.layout.simple_list_item_1, Utils.COUNTRIES)
-
             city_et.setAdapter(adapter)
         hometype_rg.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { radioGroup: RadioGroup, i: Int ->
-
             when (i) {
                 R.id.rented_rb -> {
                     hometype = "Rent"
@@ -97,7 +91,6 @@ class ApplicationForm1Activity : AppCompatActivity() , DatePickerDialog.OnDateSe
                     monthrent_et.visibility = View.GONE
                 }
             }
-
         })
 /*
         salarys_rb!!.setOnClickListener {
@@ -170,20 +163,19 @@ class ApplicationForm1Activity : AppCompatActivity() , DatePickerDialog.OnDateSe
                     emailid_et.error = "Please Enter Email- ID"
                 }else if(city_actv.text.toString().isEmpty()){
                     city_actv.error="Please Enter City"
-                }else if (designation_et.text.toString().isEmpty()){
+                }/*else if (designation_et.text.toString().isEmpty()){
                     designation_et.error="Please Enter Your Designation"
                 } else if (cname_et.text.toString().isEmpty()) {
                     cname_et.error = "Please Enter Company Name"
-                } else {
+                } */else {
 
                     Common.form1list.put("fullname", fullname_et.text.toString())
                     Common.form1list.put("phonenumner", mobilenumber_et.text.toString())
                     Common.form1list.put("emailid", emailid_et.text.toString())
                     Common.form1list.put("city", city_actv.text.toString())
-                    Common.form1list.put("company_name", cname_et.text.toString())
-                    Common.form1list.put("pincode", pincode_et.text.toString())
-                    Common.form1list.put("designation", designation_et.text.toString())
-
+                 //   Common.form1list.put("company_name", cname_et.text.toString())
+                 //   Common.form1list.put("pincode", pincode_et.text.toString())
+                  //  Common.form1list.put("designation", designation_et.text.toString())
                     //  Common.form1list.put("Address", address + " \nEmailid:-" + emailid_et.text.toString() + " \n Phone No:" + mobilenumber_et.text.toString() )
                     startActivity(Intent(this, ApplicationForm2Activity::class.java))
 

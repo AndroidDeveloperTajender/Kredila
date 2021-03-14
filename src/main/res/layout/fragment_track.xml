@@ -2,10 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_track"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:background="@drawable/fintapbg"
     tools:context=".Fragment.TrackFragment">
     <LinearLayout
         android:orientation="vertical"
@@ -44,13 +43,15 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"/>
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:orientation="vertical"
         android:layout_marginBottom="0dp"
         android:layout_centerInParent="true"
         android:id="@+id/trackcardview"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="6dp"
         android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -117,7 +118,7 @@
         </LinearLayout>
 
 
-    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

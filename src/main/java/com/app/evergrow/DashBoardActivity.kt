@@ -68,10 +68,6 @@ class DashBoardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash_board)
 
-
-
-
-
         val navView: NavigationView = findViewById(R.id.nav_view)
         navView.setNavigationItemSelectedListener(this);
         //headre=navView.getHeaderView(0);
@@ -84,8 +80,6 @@ class DashBoardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                     for (documentSnapshot in task.result!!)
 
                     // Log.e("FRAGMENTPROFILE",documentSnapshot.data.get("FullName").toString())
-
-
 
                        // headre!!.loginusername.text= documentSnapshot.data.get("FullName").toString()
 

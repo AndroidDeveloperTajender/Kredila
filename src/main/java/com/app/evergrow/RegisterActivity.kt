@@ -34,7 +34,6 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var mpintwo:EditText
     lateinit var mpinthree:EditText
     lateinit var mpinfour:EditText
-
     lateinit var sendOtp_btn: Button
     lateinit var register_btn: Button
     lateinit var login_link: TextView

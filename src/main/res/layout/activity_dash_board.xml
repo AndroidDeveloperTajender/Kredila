@@ -12,8 +12,7 @@
         android:id="@+id/holder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <include
             layout="@layout/app_bar_dash_board"
             android:layout_width="match_parent"

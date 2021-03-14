@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/bnav_feedback"
-        android:icon="@drawable/feedbackicon"
+            android:icon="@drawable/feedbackicon"
         android:title="FEEDBACK" />
     <item
         android:id="@+id/bnav_track"

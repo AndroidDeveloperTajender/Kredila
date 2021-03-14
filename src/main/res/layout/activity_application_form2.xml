@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/evergrow_bg"
     android:layout_height="match_parent"
     tools:context=".ApplicationForm.ApplicationForm2Activity">
 
@@ -18,6 +17,7 @@
             android:layout_gravity="center"
             android:layout_height="70dp"/>
         <TextView
+            android:visibility="gone"
             android:textAlignment="center"
             android:textSize="26sp"
             android:textColor="@color/colorBlack"
@@ -30,11 +30,35 @@
             android:src="@drawable/steptwo"
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
+        <RelativeLayout
+            android:background="@drawable/formcardbg"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <ImageView
 
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:layout_height="90dp"/>
+            <TextView
+                android:textColor="#111"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:text="Customer Info"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="20dp"
             app:cardCornerRadius="6dp"
             android:layout_height="wrap_content">
 
@@ -46,95 +70,11 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:textSize="16sp"
-                    android:id="@+id/amount_choose_tv"
-                    android:textColor="@color/colorBlack"
-                    android:text="How Much Amount You Pay"
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:layout_height="wrap_content"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:text="50"
-                        android:textColor="@color/colorBlack"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:textAlignment="textEnd"
-                        android:layout_weight="0.3"/>
-                    <SeekBar
-                        android:id="@+id/seekbar_amount"
-                        android:layout_marginTop="0dp"
-                        android:min="50"
-                        android:max="1000"
-                        android:layout_width="0dp"
-                        android:thumbTint="@color/colorPrimary"
-                        android:layout_weight="1.2"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:textColor="@color/colorBlack"
-                        android:text="1000"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.5"/>
-                </LinearLayout>
-
-
-                <TextView
-                    android:layout_marginTop="15dp"
-                    android:textSize="16sp"
-                    android:id="@+id/hr_choose_tv"
-                    android:textColor="@color/colorBlack"
-                    android:text="Choose Tenure:   3M"
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:layout_height="wrap_content"/>
-                <SeekBar
-                    android:id="@+id/seekbar_hr"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"
-                    android:progressTint="@android:color/holo_green_light"
-                    android:thumbTint="@color/colorPrimary"
-                    android:min="24"
-                    android:max="72"
-                    android:tickMarkTint="@color/colorAccent"
-                    android:layout_marginEnd="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:layout_marginTop="15dp"
-                    android:textSize="16sp"
-                    android:id="@+id/cibil_choose_tv"
-                    android:textColor="@color/colorBlack"
-                    android:text="Choose CiBil:   3M"
-                    android:layout_width="match_parent"
-                    android:textAlignment="center"
-                    android:layout_height="wrap_content"/>
-                <SeekBar
-                    android:id="@+id/seekbar_cibil"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="20dp"
-                    android:progressTint="@android:color/holo_green_light"
-                    android:thumbTint="@color/colorPrimary"
-                    android:min="500"
-                    android:max="900"
-                    android:tickMarkTint="@color/colorAccent"
-                    android:layout_marginEnd="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-                <TextView
                     android:layout_marginTop="15dp"
                     android:textSize="16sp"
                     android:id="@+id/applicantage_choose_tv"
                     android:textColor="@color/colorBlack"
-                    android:text="Choose Applicant Age:   3M"
+                    android:text="Customer Age Required:   20y"
                     android:layout_width="match_parent"
                     android:textAlignment="center"
                     android:layout_height="wrap_content"/>
@@ -145,7 +85,7 @@
                     android:progressTint="@android:color/holo_green_light"
                     android:thumbTint="@color/colorPrimary"
                     android:min="20"
-                    android:max="75"
+                    android:max="70"
                     android:tickMarkTint="@color/colorAccent"
                     android:layout_marginEnd="20dp"
                     android:layout_width="match_parent"
@@ -155,7 +95,7 @@
                     android:textColor="@color/colorBlack"
                     android:layout_marginTop="30dp"
                     android:textSize="18sp"
-                    android:text="Profession"
+                    android:text="Customer Work Status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -176,8 +116,8 @@
                             android:id="@+id/salared_rb"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:text="Salaried"
-
+                            android:text="Salary"
+                            android:checked="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <RadioButton
@@ -185,8 +125,8 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:layout_marginStart="30dp"
-                            android:checked="true"
-                            android:text="Self-Employed"
+
+                            android:text="Businessman"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -198,7 +138,7 @@
                     android:textColor="@color/colorBlack"
                     android:layout_marginTop="30dp"
                     android:textSize="18sp"
-                    android:text="Resident Check"
+                    android:text="Resident Status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -220,71 +160,35 @@
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="Rented"
-
+                            android:checked="true"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
                         <RadioButton
                             android:id="@+id/owned_rb"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:checked="true"
                             android:layout_marginStart="30dp"
                             android:text="Owned"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
-
-
-                    </RadioGroup>
-                </LinearLayout>
-                <TextView
-                    android:textStyle="bold"
-                    android:textColor="@color/colorBlack"
-                    android:layout_marginTop="30dp"
-                    android:textSize="18sp"
-                    android:text="Applicant Detail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:layout_height="wrap_content">
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center"
-                        android:gravity="center_vertical"
-                        android:id="@+id/applicantdetails_Check_rg"
-                        android:layout_height="wrap_content">
                         <RadioButton
-                            android:id="@+id/mandateory_rb"
+                            android:id="@+id/bothrented_rb"
                             android:layout_gravity="center"
                             android:gravity="center"
-                            android:text="Mandateory"
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                        <RadioButton
-                            android:id="@+id/non_mandetory_rb"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:checked="true"
                             android:layout_marginStart="30dp"
-                            android:text="Non-Mandetory"
+                            android:text="Both Rented"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
-
                     </RadioGroup>
                 </LinearLayout>
+
                 <TextView
                     android:textStyle="bold"
                     android:textColor="@color/colorBlack"
                     android:layout_marginTop="30dp"
                     android:textSize="18sp"
-                    android:text="Income Type"
+                    android:text="Monthly Income"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
                 <LinearLayout
@@ -303,7 +207,30 @@
                         android:textAlignment="center"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
-
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:text="CIBIL Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/cibilstatus_sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="16dp"
+                        android:background="@drawable/spinner_bg"
+                        android:textAlignment="center"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
                 <Button
                     android:background="@drawable/butttonbg"
                     android:text="next"

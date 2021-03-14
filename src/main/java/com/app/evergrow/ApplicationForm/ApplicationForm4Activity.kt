@@ -142,17 +142,17 @@ class ApplicationForm4Activity : AppCompatActivity(), PaymentResultListener {
         dialog.setCancelable(false)
         dialog.window!!.setBackgroundDrawableResource(android.R.color.transparent)
         dialog.setContentView(R.layout.dialog_layout)
-        val name = dialog!!.findViewById(R.id.dialognameuser_tv) as TextView
-        val dialogdescription_tv=dialog!!.findViewById<TextView>(R.id.dialogdescription_tv)
+     //   val name = dialog!!.findViewById(R.id.dialognameuser_tv) as TextView
+    //    val dialogdescription_tv=dialog!!.findViewById<TextView>(R.id.dialogdescription_tv)
 
-        name.text = "Dear ${capitizeString(Common.form1list.get("Name as per bank").toString())}"
-        val yesBtn = dialog!!.findViewById(R.id.btn_apply) as Button
-        var content="Your Loan Aggrements/Stamp Papers &amp; Sign Verification Aggrements Will Generate After Stamp Papers<font color='#3700B3'> Fees(Stamp Papers and Stamp duty fees Is Only paid By Applicants When is 399rs</font>  For Stamps Papers)\n EverGrow Has<font color='#3700B3'> (0% Application. 0% Process Fee. 0% Brokerage Fees).</font> <font color='#BB86FC'>499rs Is 100% Refundable.</font>With your Loan Instantly So don't Worry About your Loan and Fee."
-        dialogdescription_tv.setText(Html.fromHtml(content))
-        yesBtn.setOnClickListener {
-            dialog.dismiss()
-            startPayment()
-        }
+      //  name.text = "Dear ${capitizeString(Common.form1list.get("Name as per bank").toString())}"
+      //  val yesBtn = dialog!!.findViewById(R.id.btn_apply) as Button
+     //   var content="Your Loan Aggrements/Stamp Papers &amp; Sign Verification Aggrements Will Generate After Stamp Papers<font color='#3700B3'> Fees(Stamp Papers and Stamp duty fees Is Only paid By Applicants When is 399rs</font>  For Stamps Papers)\n EverGrow Has<font color='#3700B3'> (0% Application. 0% Process Fee. 0% Brokerage Fees).</font> <font color='#BB86FC'>499rs Is 100% Refundable.</font>With your Loan Instantly So don't Worry About your Loan and Fee."
+        //dialogdescription_tv.setText(Html.fromHtml(content))
+        //yesBtn.setOnClickListener {
+      //      dialog.dismiss()
+     //       startPayment()
+    //    }
         dialog.show()
 
     }

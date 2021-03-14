@@ -12,6 +12,7 @@ import android.view.KeyEvent
 import android.view.View
 import android.view.Window
 import android.widget.*
+import androidx.core.view.get
 import com.app.evergrow.Common.Common
 import com.app.evergrow.DashBoardActivity
 import com.app.evergrow.R
@@ -29,10 +30,8 @@ class ApplicationForm2Activity : AppCompatActivity() {
     var imageselced1=false
     var imageselced2=false
     var imageselced3=false
-
-
     var Profession=""
-   var applicantdetails=""
+   var incomes=""
     var hometype=""
     var urione: Uri?=null
     var uritwo: Uri?=null
@@ -40,7 +39,7 @@ class ApplicationForm2Activity : AppCompatActivity() {
     var urifour: Uri?=null
     var loanAmount: String="50"
     var cibil:String="500"
-    var hour: String="24hr"
+    var cibilstatus=""
     var applicantage="20"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,7 +48,7 @@ class ApplicationForm2Activity : AppCompatActivity() {
 
 
        // amount_choose_tv.max=1000
-
+/*
       seekbar_amount.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
 
@@ -69,25 +68,38 @@ class ApplicationForm2Activity : AppCompatActivity() {
             }
 
         })
-
-        val languages = resources.getStringArray(R.array.Languages)
+*/
+        val Incomes = resources.getStringArray(R.array.Income)
         val adapter = ArrayAdapter(this,
-                android.R.layout.simple_spinner_item, languages)
+                android.R.layout.simple_spinner_dropdown_item, Incomes)
         income_sp.adapter = adapter
        // income_sp
-        income_sp.onItemSelectedListener=object:AdapterView.OnItemClickListener, AdapterView.OnItemSelectedListener {
-            override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        income_sp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
 
-            }
-
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                TODO("Not yet implemented")
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                incomes = parent.getItemAtPosition(position).toString()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // write code to perform some action
+
             }
         }
+        val cibilstatuss = resources.getStringArray(R.array.Cibil)
+        val cibilstatus_adapter = ArrayAdapter(this,
+                android.R.layout.simple_spinner_dropdown_item, cibilstatuss)
+        cibilstatus_sp.adapter = cibilstatus_adapter
+        cibilstatus_sp.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                cibilstatus = parent.getItemAtPosition(position).toString()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+
+            }
+        }
+
+        /*
       seekbar_hr.max=72
         seekbar_hr.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
@@ -149,7 +161,24 @@ class ApplicationForm2Activity : AppCompatActivity() {
             }
         })
 
+*/
 
+        seekbar_applicantage.setOnSeekBarChangeListener(object :SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, p1: Int, fromUser: Boolean) {
+                applicantage=p1.toString()
+                applicantage_choose_tv.text = "Customer Age Required:     $p1 y"
+            }
+
+            override fun onStartTrackingTouch(p1: SeekBar?) {
+              //  applicantage=p1.toString()
+               // applicantage_choose_tv.text = "Customer Age Required:     $p1"
+            }
+
+            override fun onStopTrackingTouch(p1: SeekBar?) {
+             //   applicantage=p1.toString()
+              //  applicantage_choose_tv.text = "Customer Age Required:     $p1 y"
+            }
+        })
         Profession_rg.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { radioGroup: RadioGroup, i: Int ->
 
             when (i) {
@@ -164,6 +193,7 @@ class ApplicationForm2Activity : AppCompatActivity() {
             }
 
         })
+        /*
         applicantdetails_Check_rg.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { radioGroup: RadioGroup, i: Int ->
 
             when (i) {
@@ -178,6 +208,7 @@ class ApplicationForm2Activity : AppCompatActivity() {
             }
 
         })
+        */
         Resident_Check_rg.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { radioGroup: RadioGroup, i: Int ->
 
             when (i) {
@@ -189,41 +220,54 @@ class ApplicationForm2Activity : AppCompatActivity() {
                     hometype = "Owned"
                     //monthrent_et.visibility = View.GONE
                 }
+                R.id.bothrented_rb->{
+                    hometype="BothRented"
+                }
             }
 
         })
 
-
         nexttwo_btn.setOnClickListener {
             Log.e("CHECKNAME", Common.form1list.get("fullname").toString())
-            if (urione==null){
-                 Toasty.warning(applicationContext,"Please PAN Select and Capture", Toast.LENGTH_LONG).show()
-                Log.e("ERRORSF","one")
-            }else if (uritwo==null){
-               Toasty.warning(applicationContext,"Please Adhaar Front Select and Capture",
+            if (applicantage.isEmpty()){
+                 Toasty.warning(applicationContext,"Please Choose Customer Age", Toast.LENGTH_LONG).show()
+             //   Log.e("ERRORSF","one")
+            }else if (Profession.isEmpty()){
+               Toasty.warning(applicationContext,"Please Select Work Status",
                     Toast.LENGTH_LONG).show()
-                Log.e("ERRORSF","two")
-            }else if (urithree==null){
-                Toasty.warning(applicationContext,"Please Adhaar Back Select and Capture",
+               // Log.e("ERRORSF","two")
+            }else if (hometype.isEmpty()){
+                Toasty.warning(applicationContext,"Please Select Residental Type",
                     Toast.LENGTH_LONG).show()
-                Log.e("ERRORSF","three")
-            }else if (urifour==null){
-              Toasty.warning(applicationContext,"Please Photo Select and Capture",
+              //  Log.e("ERRORSF","three")
+            }else if (incomes=="Select Income Type"){
+              Toasty.warning(applicationContext,"Please Choose Income Type",
                     Toast.LENGTH_LONG).show()
-                Log.e("ERRORSF","four")
+              //  Log.e("ERRORSF","four")
+            }else if (cibilstatus=="Select Cibil Status"){
+                Toasty.warning(applicationContext,"Please Choose the Cibil Status",Toasty.LENGTH_LONG)
+                        .show()
             }else{
 
+
+                Common.form1list.put("cage",applicantage)
+                Common.form1list.put("work_status",Profession)
+                Common.form1list.put("residental_status",hometype)
+                Common.form1list.put("monthly_income",incomes)
+                Common.form1list.put("cibil_status",cibilstatus)
+
                 var progressDialog = ProgressDialog(this)
-                progressDialog.setTitle("EVERGROW")
+                progressDialog.setTitle("LeadGram")
                 progressDialog.setMessage("Calculations is in Process Please Wait..")
                 progressDialog.setCancelable(false)
                 progressDialog.show()
                 Handler().postDelayed(
                     {
                         progressDialog.dismiss()
+                        startActivity(Intent(this,ApplicationForm3Activity::class.java))
                         // root. progressbar_a2.visibility=View.GONE
                        // openDialog()
-                    },15000L)
+                    },5000L)
             }
         }
 
@@ -319,11 +363,6 @@ class ApplicationForm2Activity : AppCompatActivity() {
     override fun onBackPressed() {
 
         moveTaskToBack(true)
-
-
-
-
-
         super.onBackPressed()
 
     }

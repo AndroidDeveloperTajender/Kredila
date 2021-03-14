@@ -7,16 +7,16 @@
     android:background="@drawable/dialog_threebg"
     android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_marginTop="100dp"
-            android:paddingStart="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorBlack"
-            android:textSize="23sp"
-            android:text="Dear User"
-            android:id="@+id/dialognameuser_tv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="100dp"
+        android:paddingStart="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:textSize="23sp"
+        android:text="Dear User"
+        android:id="@+id/dialognameusersecond_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_marginTop="10dp"
@@ -25,31 +25,21 @@
         android:textStyle="normal"
         android:textColor="@color/colorBlack"
         android:textSize="16sp"
-        android:text="Kindly Accept all terms and condition submit the Requesting leads packages fee."
-        android:id="@+id/dialogdescription_tv"
+        android:text="Your Lead request has been genreated and accepted \n we have many customers for your selected products with good profits please submit and pay the leads Amount and get your leads.\n Amount()is 100% Refundable with30 days many back geratee it we are failed to secure your leads or 100% exchange for switch off/unreachable/not Interated Leads.\n so don't worry to your payment and leads now.\n Increase your Business now and get your Track Number"
+        android:id="@+id/dialogdescriptionsecond_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <CheckBox
-        android:id="@+id/tc_chk"
-        android:text="Terms/Conditions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <CheckBox
-        android:id="@+id/payleadamount_chk"
-        android:text="Pay Lead Amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
     <Button
-        android:text="Submit"
+        android:text="Submit &amp; Pay"
         android:layout_width="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:id="@+id/submitdialog_btn"
+        android:id="@+id/submitdialogsecond_btn"
         android:layout_gravity="end"
         android:textColor="@color/colorWhite"
         android:layout_marginTop="10dp"
         android:background="@drawable/butttonbg"
         android:layout_height="40dp"/>
 
-    </LinearLayout>
+</LinearLayout>

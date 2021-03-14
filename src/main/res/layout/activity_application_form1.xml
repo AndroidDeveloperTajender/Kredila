@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/evergrow_bg"
     android:layout_height="match_parent"
     tools:context=".ApplicationForm.ApplicationForm1Activity">
 
@@ -25,59 +24,114 @@
         android:textColor="@color/colorBlack"
         android:textStyle="bold"
         android:text=""
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <ImageView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:src="@drawable/stepone"
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
+
+   <RelativeLayout
+       android:background="@drawable/formcardbg"
+       android:layout_width="match_parent"
+       android:layout_height="90dp">
+       <ImageView
+
+           android:layout_width="match_parent"
+           android:scaleType="fitXY"
+           android:layout_marginStart="15dp"
+           android:visibility="gone"
+           android:layout_marginEnd="15dp"
+           android:layout_height="90dp"/>
+       <TextView
+           android:textColor="#111"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           android:text="Banker Info"
+           android:textAlignment="center"
+           android:layout_centerHorizontal="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+   </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        app:cardCornerRadius="6dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="16dp"
         android:layout_height="wrap_content">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="vertical"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_height="wrap_content">
 
 
-
+<TextView
+    android:padding="8dp"
+    android:textSize="16sp"
+    android:textColor="#111"
+    android:text="Full Name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:id="@+id/fullname_et"
                 android:layout_margin="10dp"
-                android:hint="Full Name"
-                android:padding="10dp"
 
+                android:padding="10dp"
+                android:background="@drawable/inputtype_bg"
                 android:inputType="text"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#111"
+                android:text="Mobile Number"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:id="@+id/mobilenumber_et"
-                android:hint="Mobile Number"
+                android:hint=""
                 android:layout_margin="10dp"
                 android:padding="10dp"
 
+                android:background="@drawable/inputtype_bg"
                 android:inputType="number"
                 android:layout_height="wrap_content"/>
-
+            <TextView
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#111"
+                android:text="E-mail ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:padding="10dp"
                 android:layout_margin="10dp"
                 android:id="@+id/emailid_et"
-                android:hint="E-mail ID"
+                android:background="@drawable/inputtype_bg"
                 android:inputType="textEmailAddress"
                 android:layout_height="wrap_content"/>
-
+            <TextView
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#111"
+                android:text="Enter City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:weightSum="1"
@@ -96,7 +150,7 @@
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:padding="16dp"
-                        android:hint="Enter City"
+                        android:background="@drawable/inputtype_bg"
                         android:textAlignment="textStart"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -223,6 +277,7 @@
                 android:layout_width="match_parent"
                 android:id="@+id/designation_et"
                 android:padding="10dp"
+                android:visibility="gone"
                 android:layout_margin="10dp"
                 android:hint="Designation"
                 android:inputType="text"
@@ -234,7 +289,7 @@
                 android:hint="Company Name"
                 android:padding="10dp"
                 android:layout_margin="10dp"
-
+                android:visibility="gone"
                 android:inputType="text"
                 android:layout_height="wrap_content"/>
 
@@ -243,6 +298,7 @@
                 android:id="@+id/pincode_et"
                 android:hint="Pin Code"
                 android:padding="10dp"
+                android:visibility="gone"
                 android:inputType="number"
                 android:layout_margin="10dp"
                 android:layout_height="wrap_content"/>

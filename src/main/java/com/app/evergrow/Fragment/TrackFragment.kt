@@ -130,8 +130,7 @@ class TrackFragment : Fragment() {
                                         root.notrackloan_ll.visibility = View.VISIBLE
                                         Log.e("FRAGMENT", "No Data")
                                     } else {
-
-                                        root.trackloan_iv.visibility = View.GONE
+                                        root.trackloan_iv.visibility = View.VISIBLE
                                         root.notrackloan_ll.visibility = View.GONE
                                         root.trackloan_ll.visibility = View.GONE
                                         startActivity(Intent(context, TrackedActivity::class.java))
